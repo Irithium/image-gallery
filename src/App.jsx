@@ -1,11 +1,14 @@
-import "./App.css";
-import Card from "./components/Card";
+import Cards from "./containers/Cards";
+import Header from "./containers/Header";
+import Footer from "./containers/Footer.jsx";
 
 function App() {
   return (
-    <>
-      <Card />
-    </>
+    <main className="text-center flex justify-center mx-auto pb-2 bg-[#2E2F2F] flex-col ">
+      <Header />
+      <Cards />
+      <Footer />
+    </main>
   );
 }
 
