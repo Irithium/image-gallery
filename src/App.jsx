@@ -4,7 +4,7 @@ import Footer from "./containers/Footer.jsx";
 
 function App() {
   return (
-    <main className="text-center flex justify-center mx-auto pb-2 bg-[#2E2F2F] flex-col ">
+    <main className="text-center flex justify-center mx-auto pb-2 bg-jet dark:bg-rich_black flex-col ">
       <Header />
       <Cards />
       <Footer />
