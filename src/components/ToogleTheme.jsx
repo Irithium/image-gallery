@@ -14,8 +14,9 @@ const ToogleTheme = ({ logo, handleChangeLogo }) => {
   }, [theme]);
 
   const handleChangeTheme = () => {
-    const newValue =
-      logo === "/img/Logo3.jpg" ? "/img/Logo2.jpg" : "/img/Logo3.jpg";
+    const newValue = document.querySelector("html").classList.contains("dark")
+      ? "/img/Logo2.jpg"
+      : "/img/Logo3.jpg";
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
     handleChangeLogo(newValue);
   };
