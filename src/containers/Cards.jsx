@@ -148,7 +148,7 @@ const Cards = ({ term, handleCleanTerm }) => {
             <p className="px-3 py-[2px] dark:bg-wisteria-300 dark:text-mountbatten_pink-800 dark:border-mountbatten_pink-700 bg-dark_cyan text-sunset text-lg font-semibold rounded-2xl border-2 border-sunset max-w-[45px] w-fit mx-auto">
               {page}
             </p>
-            {page >= 26 || images.length <= 20 ? (
+            {page >= 26 || images.length < 20 ? (
               <button
                 onClick={handleNextPage}
                 className="px-3 invisible py-1 bg-dark_cyan font-semibold rounded-xl border-2 border-sunset w-fit place-self-start"
